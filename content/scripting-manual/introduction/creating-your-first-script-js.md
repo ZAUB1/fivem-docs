@@ -51,7 +51,7 @@ declare function on(eventName: string, callback: Function): void
 ```
 This function allows you to listen for an event, following our car example:
 ```js
-on("car", (vehname) => {
+on("spawncar", (vehname) => {
     console.log(vehname); // We can also print the model name here
 });
 ```
@@ -78,7 +78,7 @@ void SET_PED_INTO_VEHICLE(Ped ped, Vehicle vehicle, int seatIndex);
 ```
 Let's finalize our command then :
 ```js
-on("car", (vehname) => {
+on("spawncar", (vehname) => {
     RequestModel(vehname); // Loads the model
     
     const ped = PlayerPedId();
